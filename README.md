@@ -2,7 +2,48 @@
 
 ##  Nom / Prénom
 Nguemthueng Tsemo Bibiane Danielle
+##  Structure du dépôt
 
+```
+    dataset_clients_orange.csv            jeu de données
+notebook/
+    OrangeClientAnalytics.ipynb           notebook complet (exécutable sur Colab )
+rapport_OrangeClientAnalytics.pdf  rapport synthétique
+README.md
+```
+
+##  Instructions pour la préparation des données et l’exécution
+
+###  Option 1 : Depuis **Google Colab** 
+
+1. Aller sur : https://colab.research.google.com/
+2. Cliquez sur "GitHub" et cherchez ce dépôt : `TsemoDanielle/OrangeClientAnalytics`
+3. Ouvrez le fichier : `notebook/OrangeClientAnalytics.ipynb`
+4. Connectez votre Google Drive pour accéder aux données :
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+5. Modifiez le chemin du fichier CSV  :
+```python
+file_path = "/content/drive/MyDrive/dataset_clients_orange.csv"
+```
+6. Exécutez les cellules **dans l’ordre**
+
+---
+
+###  Option 2 : Depuis votre PC avec **Jupyter Notebook**
+
+1. Cloner le dépôt :
+```bash
+git clone https://github.com/TsemoDanielle/OrangeClientAnalytics.git
+```
+2. Ouvrir le terminal ou Anaconda et lancer :
+```bash
+jupyter notebook
+```
+3. Ouvrir `notebook/OrangeClientAnalytics.ipynb`
+4. Exécutez les cellules dans l’ordre
 ## Librairies utilisées
 - pandas
 - numpy
